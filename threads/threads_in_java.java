@@ -1,4 +1,4 @@
-class thread1 extends Thread {
+class examplethread1 extends Thread {
     public void run(){
         while (true) {
             try {
@@ -11,7 +11,7 @@ class thread1 extends Thread {
     }
 }
 
-class thread2 extends Thread {
+class examplethread2 extends Thread {
     public void run(){
         while (true) {
             try {
@@ -27,8 +27,8 @@ class thread2 extends Thread {
 class threads_in_java {
     public static void main(String[] args){
 
-        thread1 t1 = new thread1();
-        thread2 t2 = new thread2();
+        examplethread1 t1 = new examplethread1();
+        examplethread2 t2 = new examplethread2();
 
         t1.start();
         t2.start();
